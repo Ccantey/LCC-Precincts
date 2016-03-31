@@ -59,8 +59,8 @@ function toggleBaseLayers(el, layer1, layer2){
 function getOverlayLayers(el, switchId){
     $('.loader').show();
 
-    switchMap = {"countyonoffswitch": "cty2010", "cityonoffswitch":"mcd2015", "cononoffswitch":"cng2012", "ssonoffswitch":"sen2012_vtd2015", "shonoffswitch":"hse2012_vtd2015"}
-    // console.log(typeof switchMap[switchId]);
+    switchMap = {"precinctsonoffswitch": "vtd2015general","countyonoffswitch": "cty2010", "cityonoffswitch":"mcd2015", "cononoffswitch":"cng2012", "ssonoffswitch":"sen2012_vtd2015", "shonoffswitch":"hse2012_vtd2015"}
+    console.log(switchMap[switchId]);
    
     if(el.is(':checked')){
     	map.removeLayer(overlayLayers[switchMap[switchId]]);
@@ -70,7 +70,7 @@ function getOverlayLayers(el, switchId){
     	$('.leaflet-marker-icon.'+switchMap[switchId]).show();
 
     	if(typeof overlayLayers[switchMap[switchId]] === 'undefined'){
-    		overlayLayers[switchMap[switchId]] = L.tileLayer.wms('http://www.gis.leg.mn/cgi-bin/mapserv?map=/web/gis/OpenLayers/districts/data/mapserver.map', {
+    		overlayLayers[switchMap[switchId]] = L.tileLayer.wms('http://ww2.commissions.leg.state.mn.us/cgi-bin/mapserv?map=/web/gis/iMaps/precincts/data/mapserver.map', {
 			    format: 'image/png',
 			    transparent: false,
 			    minZoom: 6,

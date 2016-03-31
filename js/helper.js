@@ -58,7 +58,7 @@ $( document ).ready(function() {
     });
 
 	// Members UI click turn red with 'active' class
-	$( ".memberLink" ).click(function(e) {
+	$( ".memberLink, .precinctLink" ).click(function(e) {
 		e.stopPropagation();
 		dataLayer.push({'event': 'zoomToDistrict'});
 		var mom = $(this).parent();
@@ -120,11 +120,11 @@ $( document ).ready(function() {
 	});
 
     //fetch overlay layers
-	$('#countyonoffswitch, #cononoffswitch, #ssonoffswitch, #shonoffswitch, #cityonoffswitch').click(function(){
-		//console.log(typeof($(this).attr('id')));
+	$('#precinctsonoffswitch, #countyonoffswitch, #cononoffswitch, #ssonoffswitch, #shonoffswitch, #cityonoffswitch').click(function(){
+		// console.log($(this).attr('id'));
 		var elementName = $(this).attr('id')
         getOverlayLayers($(this), $(this).attr('id'));
-        dataLayer.push({'event': 'layerToggle_'+ elementName});
+        // dataLayer.push({'event': 'layerToggle_'+ elementName});
 	});
 
 	//map reset

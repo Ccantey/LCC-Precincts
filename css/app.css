@@ -229,9 +229,9 @@ ul{
     position:relative;
     font-weight: bold;
     /*bottom: 80px;*/
-    left:10px;
-    top:-5px;
-    text-align: left;
+    /*left:80px;*/
+    top:-17px;
+    text-align: center;
     z-index: 101;
 
 }
@@ -251,9 +251,9 @@ ul{
 
 .lcc_gis_precinct{
     position: relative;
-    left: 10px;
-    top:0;
-    text-align: left;    
+    /*left: 80px;*/
+    top:-13px;
+    text-align: center;    
 }
 .lcc_gis_memberdistrict{
     position: relative;
@@ -279,6 +279,11 @@ ul{
     top:-9px;
     /*bottom:80px;*/
     text-align: right;
+}
+.precinctLink{
+    position:relative;
+    text-align:center;
+    top:30px;
 }
 
 .search label{
@@ -600,7 +605,7 @@ ul{
 #gpsButton{
         display:none;
     }
-    #mnhouselink, #mnsenlink, #ushouselink, #ussenatelink, #ussenate2link{
+    #mnhouselink, #mnsenlink, #ushouselink, #ussenatelink, #ussenate2link, #mnprecinctlink{
         padding: 3px;
         border-radius: 3px;
         color:#a54a36;
@@ -610,7 +615,7 @@ ul{
         font-style:     italic;
 
     }
-  #mnhouselink:hover, #mnsenlink:hover, #ushouselink:hover, #ussenatelink:hover, #ussenate2link:hover{
+  #mnhouselink:hover, #mnsenlink:hover, #ushouselink:hover, #ussenatelink:hover, #ussenate2link:hover, #mnprecinctlink:hover{
     background-color: #725448;
     color:#e6e6e6;
     border-color:#e6e6e6;

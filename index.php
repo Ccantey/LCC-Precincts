@@ -38,6 +38,17 @@
     		<div id="map_layers_toggle"> Hide Layers <i class="fa fa-map fa-sm"></i> <i class="fa fa-chevron-right fa-sm"></i></div>
     		<div id="map_layers_content_title">Layers</div>
     		<div id="map_layers_content_list">
+
+    		    <div id="vtddiv"class="onoffswitch">
+	    		    
+	    			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="precinctsonoffswitch" checked>
+	    				<label class="onoffswitch-label" for="precinctsonoffswitch">
+	        				<span class="onoffswitch-inner"></span>
+	        				<span class="onoffswitch-switch"></span>
+	    				</label>
+	    			
+				</div>
+				<div class='layersswitchLabel'>Precincts</div>
 	    		<div id="shdiv"class="onoffswitch">
 	    		    
 	    			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="shonoffswitch" checked>
@@ -48,6 +59,7 @@
 	    			
 				</div>
 				<div class='layersswitchLabel'>State House Districts</div>
+
 				<div id="ssdiv"class="onoffswitch">
 	    		    
 	    			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="ssonoffswitch" checked>
@@ -147,7 +159,7 @@
 			        
 			        	
 			        	<div class="membersublist">
-			        		 <div class="memberLink"><span id="mnhouselink">Show Precinct <i class="fa fa-external-link-square"></i></span></div>   	
+			        		 <div class="precinctLink"><span id="mnprecinctlink">Show Precinct <i class="fa fa-external-link-square"></i></span></div>   	
 			        		<div  class='precinctTitle'></div>
 			        		<div id='precinctData' class='lcc_gis_precinct'></div>
 			        	</div>
