@@ -42,16 +42,21 @@ $( document ).ready(function() {
     // both key and enter fire geoCodeAddress
     $('#searchButton').click(function(e){
     	e.preventDefault();
-    	dataLayer.push({'event': 'searchButton'});
+    	// dataLayer.push({'event': 'searchButton'});
     	geoCodeAddress(geocoder, map);
     })
 	
 	// hide links - format is off until results come back
     $('.memberLink').hide();
 
+    $('.precincts').click(function(e){
+    	//console.log($(this).data('webid'))
+    	window.open('http://pollfinder.sos.state.mn.us/');
+    })
+
     $( ".mnhouse, .mnsenate, .ushouse, .ussenate1, .ussenate2" ).click(function(e) {
         var link = '';
-        dataLayer.push({'event': 'memberclick'});
+        // dataLayer.push({'event': 'memberclick'});
         link = $(this).attr('data-webid');
     	//console.log($(this).data('webid'))
     	window.open(link)

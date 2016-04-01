@@ -168,7 +168,7 @@ function addMemberData(memberData){
 	    $('#mask').hide();
 	    geojson = memberData;
 		//also show hyperlinks here
-	    $('.memberLink').show();
+	    $('.memberLink, .precinctLink').show();
 	    //add memberdata from map selection to member list
 	    //ALTERNATIVE SOLUTION! Use house/senate image server: http://www.house.leg.state.mn.us/hinfo/memberimgls89/ -- but then you have issue of large image sizes, slow performance
 	    $('.precinctTitle').html('2015 Precinct Information');
@@ -208,7 +208,7 @@ function addMemberData(memberData){
 function addMarker(e){
 	//remove sidebar formatting
 	$(".mnhouse, .mnsenate, .ushouse, .ussenate1, .ussenate2, .precincts" ).removeClass('active');
-	$('.memberLink').hide();
+	$('.memberLink, .precinctLink').hide();
 	$('.precinctTitle,#precinctData, #housemember, #senatemember, #ushousemember, #ussenatemember, #ussenatemember2').html('');
     $('#housedistrict, #senatedistrict, #ushousedistrict, #ussenatedistrict, #ussenatedistrict2').html('');
     $('#housephoto, #senatephoto, #ushousephoto, #ussenatephoto, #ussenatephoto2').removeAttr('src');
