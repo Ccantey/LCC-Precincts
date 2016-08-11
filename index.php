@@ -141,15 +141,28 @@
 	    <div id="pull-in">
 		    <i class="fa fa-chevron-left"> </i>
 	    </div>
-	    	<p><strong>To begin your search: </strong></p>
-	    	<ol>
-	    		<li>For best results, enter a complete Minnesota address including city, state, and zip code.</li>
-	    		<li>Single-click or touch the map to select a search location. </li>
-	    		<li>Select an elected official to view the official's web page/contact information.</li>
-	    		<li>Select <span class='contact'>Show District <i class="fa fa-external-link"></i></span> on member results to view the member's district boundary on the map.</li>
-	    		<li>Please note <span style="color:#a54a36; font-size:11px; padding:5px;"><i class="fa fa-info-circle"></i> Help</span> and <span style="color:#a54a36; font-size:11px; padding:5px;" class='noref' >Disclaimer <i class="fa fa-exclamation-triangle"></i> </span> below the map and <span style="color:#a54a36; font-size:11px; padding:5px;"><i class="fa fa-refresh"></i> Reset Map</span> above the map.</li>
+	    	<p><strong>Get Started: </strong></p>
+	    	<ul>
+	    		<li>For best results, enter a complete Minnesota address.</li>
+                <span class="center"> -- or -- </span>
 
-	    	</ol>
+	    		<li>Single-click or touch the map to select a search location. </li>
+	    	</ul>
+                <hr>
+            <!-- <p><strong>On Results Tab: </strong></p> -->
+            <ul>
+	    		<!-- <li>Select member in results tab to view district boundary on the map.</li>
+
+	    		<li>Select <span class='contact'>Member webpage <i class="fa fa-external-link"></i></span> in results tab to view the official's web page/contact information.</li> -->
+
+	    		<li class="helpers">Please note the 
+	    		    <span style="color:#a54a36; font-size:11px; padding:5px;">
+	    		        <i class="fa fa-info-circle"> </i>
+	    		        <i class="fa fa-exclamation-triangle"> </i>
+	    		        <i class="fa fa-refresh"> </i>
+	    		    </span> helpers placed around the map.</li>
+
+	    	</ul>
 	
 	    </div>
 	   
