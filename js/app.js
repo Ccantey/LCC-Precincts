@@ -59,7 +59,7 @@ function toggleBaseLayers(el, layer1, layer2){
 function getOverlayLayers(el, switchId){
     $('.loader').show();
 
-    switchMap = {"precinctsonoffswitch": "vtd2016primary","countyonoffswitch": "cty2010", "cityonoffswitch":"mcd2015", "cononoffswitch":"cng2012", "ssonoffswitch":"sen2012_vtd2015", "shonoffswitch":"hse2012_vtd2015"}
+    switchMap = {"precinctsonoffswitch": "vtd2016general","countyonoffswitch": "cty2010", "cityonoffswitch":"mcd2015", "cononoffswitch":"cng2012", "ssonoffswitch":"sen2012_vtd2015", "shonoffswitch":"hse2012_vtd2015"}
     console.log(switchMap[switchId]);
    
     if(el.is(':checked')){
