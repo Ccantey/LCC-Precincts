@@ -10,7 +10,7 @@ $( document ).ready(function() {
 		$('#geocodeFeedback').hide();
 		$("#geocodeAddress").val('');
 		slideSidebar();
-		dataLayer.push({'event': 'mapclick'});
+		// dataLayer.push({'event': 'mapclick'});
 	});     
 
     // on small screens
@@ -33,7 +33,7 @@ $( document ).ready(function() {
     $('#gpsButton').click(function(e){
     	e.preventDefault();
     	zoomToGPSLocation();
-    	dataLayer.push({'event': 'gps'});
+    	// dataLayer.push({'event': 'gps'});
     });
 
     // enter key event
@@ -65,7 +65,7 @@ $( document ).ready(function() {
 	// Members UI click turn red with 'active' class
 	$( ".memberLink, .precinctLink" ).click(function(e) {
 		e.stopPropagation();
-		dataLayer.push({'event': 'zoomToDistrict'});
+		// dataLayer.push({'event': 'zoomToDistrict'});
 		var mom = $(this).parent();
 		var grandma = mom.parent();
 		var child = $(this).children();
@@ -102,7 +102,7 @@ $( document ).ready(function() {
 	$('#triangle-topright').click(function(){
   		$(this).animate({right:'-100px'},250, function(){
     		$('#map_layers').animate({right:0},250);
-    		dataLayer.push({'event': 'openLayers'});
+    		// dataLayer.push({'event': 'openLayers'});
   		});  
 	});
 
